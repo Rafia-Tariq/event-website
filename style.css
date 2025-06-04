@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css');
 
-/* ===== Base Styles ===== */
 :root {
   --primary-color: #678ab3;
   --secondary-color: #89a7d3;
@@ -202,7 +201,7 @@ header p.subtitle {
 
 .card-body {
   padding: 1.5rem;
-  padding-bottom: 5rem; /* Fixed space for button */
+  padding-bottom: 5rem; 
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -222,8 +221,6 @@ header p.subtitle {
   margin: 0 0 1rem 0;
   line-height: 1.3;
 }
-
-/* Event details organization */
 .event-details {
   padding: 0;
   margin-bottom: 1rem;
@@ -248,7 +245,6 @@ header p.subtitle {
   margin-right: 0.25rem;
 }
 
-/* Description text */
 .event-description {
   margin: 0;
   padding: 0;
@@ -266,7 +262,6 @@ header p.subtitle {
   text-overflow: ellipsis;
 }
 
-/* Button styling */
 .btn-primary {
   position: absolute;
   bottom: 1.5rem;
@@ -505,7 +500,6 @@ header p.subtitle {
   text-align: center !important;
 }
 
-/* Visual Grid Styles */
 .about-visual {
   position: relative;
   height: 100%;
@@ -580,7 +574,6 @@ header p.subtitle {
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .visual-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -647,7 +640,6 @@ footer::before {
   font-weight: 600;
 }
 
-/* Scroll Animations */
 .scroll-reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -659,7 +651,6 @@ footer::before {
   transform: translateY(0);
 }
 
-/* Loading animation */
 @keyframes shimmer {
   0% { background-position: -200% 0; }
   100% { background-position: 200% 0; }
@@ -675,7 +666,6 @@ footer::before {
   animation: shimmer 1.5s infinite;
 }
 
-/* Floating animation for cards */
 @keyframes float {
   0% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -686,7 +676,6 @@ footer::before {
   animation: float 3s ease-in-out infinite;
 }
 
-/* Add icon animations */
 .icon-spin {
   animation: spin 2s linear infinite;
 }
