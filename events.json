@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Music Fiesta",
+    "date": "2025-06-15",
+    "time": "6:00 PM",
+    "location": "City Arena",
+    "description": "Join us for a night of vibrant music and dance.",
+    "image": "images/music.jpg"
+  },
+    {
+    "name": "Virtual Reality Gaming Expo",
+    "date": "2025-06-30",
+    "time": "10:00 AM",
+    "location": "Expo Center Hall B",
+    "description": "Step into the future of gaming with immersive VR experiences and tournaments.",
+    "image": "images/vr.avif"
+  },
+  {
+    "name": "Tech Conference",
+    "date": "2025-07-02",
+    "time": "9:00 AM",
+    "location": "Tech Hub",
+    "description": "Discover the latest in technology and innovation.",
+    "image": "images/tech.avif"
+  },
+  {
+    "name": "Bookworms’ Book Swap",
+    "date": "2025-07-03",
+    "time": "1:00 PM",
+    "location": "Public Library Hall",
+    "description": "Exchange books, meet fellow readers, and discover new stories.",
+    "image": "images/book.jpg"
+  },
+ 
+  {
+    "name": "Vintage Car Expo",
+    "date": "2025-07-17",
+    "time": "3:00 PM",
+    "location": "Heritage Grounds",
+    "description": "See classic cars and talk with collectors and restorers.",
+    "image": "images/car.avif"
+  },
+  {
+    "name": "Art & Culture Fair",
+    "date": "2025-06-25",
+    "time": "11:00 AM",
+    "location": "Art Gallery",
+    "description": "A celebration of art, food, and heritage.",
+    "image": "images/art.avif"
+  }
+
+]
