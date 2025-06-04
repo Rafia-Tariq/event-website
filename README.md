@@ -1,4 +1,4 @@
-1. Event Finder Web App
+1. Event Finder Web App:
 
 Event Finder is a responsive, modern web application that showcases upcoming events with details like date, time, location, description, and images. It includes a dynamic navbar, event listing section, and smooth navigation across the site.
 
@@ -11,11 +11,11 @@ Event Finder is a responsive, modern web application that showcases upcoming eve
 🔗 Smooth navigation links to `Home`, `Events`, `About`, and `Contact` sections
 🗓️ Easily extendable with more event data (in JSON format)
 
-3. How to Run Locally
+3. How to Run Locally:
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/event-finder.git
+   git clone https://github.com/Rafia-Tariq/event-website
    cd event-finder
 
 2. Open index.html in your browser:
@@ -25,7 +25,7 @@ open index.html
 or if using a live server:
 npx live-server
 
-4. Technologies Used
+4. Technologies Used:
 
 HTML5
 CSS3 + Custom Styling
