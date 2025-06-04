@@ -1,4 +1,3 @@
-// Initialize AOS
 AOS.init({
   duration: 800,
   easing: 'ease-in-out',
@@ -6,7 +5,6 @@ AOS.init({
   mirror: false
 });
 
-// Preloader
 window.addEventListener('load', () => {
   const preloader = document.getElementById('preloader');
   preloader.style.opacity = '0';
@@ -15,14 +13,12 @@ window.addEventListener('load', () => {
   }, 500);
 });
 
-// Scroll Progress Indicator
 window.addEventListener('scroll', () => {
   const scrollProgress = document.querySelector('.scroll-progress');
   const scrollPercent = (window.scrollY / (document.documentElement.scrollHeight - window.innerHeight)) * 100;
   scrollProgress.style.width = `${scrollPercent}%`;
 });
 
-// Back to Top Button
 const backToTopButton = document.getElementById('backToTop');
 
 window.addEventListener('scroll', () => {
@@ -40,10 +36,9 @@ backToTopButton.addEventListener('click', () => {
   });
 });
 
-// Counter Animation
 function animateCounter(element, target) {
   let count = 0;
-  const speed = 2000 / target; // 2 seconds duration
+  const speed = 2000 / target; 
   
   const counter = setInterval(() => {
     count++;
@@ -55,7 +50,6 @@ function animateCounter(element, target) {
   }, speed);
 }
 
-// Initialize counters when they come into view
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -71,15 +65,13 @@ const observer = new IntersectionObserver((entries) => {
 
 observer.observe(document.querySelector('.header-stats'));
 
-// Enhanced Event Display
 document.addEventListener("DOMContentLoaded", () => {
   fetch("events.json")
     .then(response => response.json())
     .then(data => {
-      window.events = data; // Store events globally
+      window.events = data; 
       displayEvents(data);
 
-      // Search functionality
       const searchInput = document.getElementById("searchInput");
       searchInput.addEventListener("input", debounce(function () {
         const query = this.value.toLowerCase();
@@ -93,7 +85,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Debounce function for search
 function debounce(func, wait) {
   let timeout;
   return function executedFunction(...args) {
@@ -124,7 +115,7 @@ function displayEvents(events) {
   }
 
   events.forEach((event, index) => {
-    const delay = index * 100; // Stagger the animations
+    const delay = index * 100;
     const card = `
       <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="${delay}">
         <div class="card h-100 position-relative">
@@ -158,19 +149,17 @@ function displayEvents(events) {
     container.innerHTML += card;
   });
 
-  // Initialize tooltips
   const tooltips = document.querySelectorAll('[data-bs-toggle="tooltip"]');
   tooltips.forEach(tooltip => {
     new bootstrap.Tooltip(tooltip);
   });
 }
 
-// Filter Buttons
 document.querySelectorAll('.filter-btn').forEach(btn => {
   btn.addEventListener('click', () => {
-    // Remove active class from all buttons
+
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
-    // Add active class to clicked button
+    
     btn.classList.add('active');
 
     const type = btn.dataset.type;
